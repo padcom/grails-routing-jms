@@ -33,7 +33,7 @@ grails.project.dependency.resolution = {
         runtime('org.apache.activemq:activemq-pool:5.2.0') {
             excludes 'spring-beans', 'spring-core'
         }
-        runtime('org.apache.camel:camel-jms:2.5.0') {
+        runtime('org.apache.camel:camel-jms:2.8.3') {
             excludes 'spring-aop', 'spring-beans', 'spring-core', 'spring-expression', 'spring-asm', 'spring-tx', 'spring-context'
         }
     }
