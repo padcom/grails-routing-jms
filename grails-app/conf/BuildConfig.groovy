@@ -35,4 +35,8 @@ grails.project.dependency.resolution = {
              excludes 'spring-aop', 'spring-beans', 'spring-core', 'spring-expression', 'spring-asm', 'spring-tx', 'spring-context'
         }
     }
+
+    plugins {
+        runtime ":routing:1.1.4-SNAPSHOT"
+    }
 }
