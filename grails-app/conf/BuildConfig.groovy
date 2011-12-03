@@ -27,8 +27,12 @@ grails.project.dependency.resolution = {
     }
 
     dependencies {
-        runtime 'org.apache.activemq:activemq-all:5.5.1'
+        runtime 'commons-logging:commons-logging:1.1.1'
+        runtime 'org.apache.activemq:activemq-core:5.5.1'
+        runtime 'org.apache.activemq:activemq-camel:5.5.1'
         runtime 'org.apache.activemq:activemq-pool:5.5.1'
-        runtime 'org.apache.camel:camel-jms:2.9.0-RC1'
+        runtime('org.apache.camel:camel-jms:2.9.0-RC1') {
+             excludes 'spring-aop', 'spring-beans', 'spring-core', 'spring-expression', 'spring-asm', 'spring-tx', 'spring-context'
+        }
     }
 }
