@@ -8,7 +8,9 @@ grails.project.dependency.resolution = {
         // uncomment to disable ehcache
         // excludes 'ehcache'
     }
+
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
+
     repositories {
         grailsPlugins()
         grailsHome()
@@ -16,25 +18,17 @@ grails.project.dependency.resolution = {
 
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
-        //mavenLocal()
-        //mavenCentral()
+        mavenLocal()
+        mavenCentral()
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
-    dependencies {
-        // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
-        // runtime 'mysql:mysql-connector-java:5.1.5'
-        runtime('org.apache.activemq:activemq-all:5.2.0') {
-            excludes 'spring-beans', 'spring-core'
-        }
-        runtime('org.apache.activemq:activemq-pool:5.2.0') {
-            excludes 'spring-beans', 'spring-core'
-        }
-        runtime('org.apache.camel:camel-jms:2.8.3') {
-            excludes 'spring-aop', 'spring-beans', 'spring-core', 'spring-expression', 'spring-asm', 'spring-tx', 'spring-context'
-        }
+    dependencies {
+        runtime 'org.apache.activemq:activemq-all:5.5.1'
+        runtime 'org.apache.activemq:activemq-pool:5.5.1'
+        runtime 'org.apache.camel:camel-jms:2.9.0-RC1'
     }
 }
