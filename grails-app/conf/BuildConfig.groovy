@@ -37,6 +37,6 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        runtime ":routing:1.1.4-SNAPSHOT"
+        runtime ":routing:1.1.4"
     }
 }
