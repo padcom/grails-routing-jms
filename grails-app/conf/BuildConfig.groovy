@@ -31,12 +31,12 @@ grails.project.dependency.resolution = {
         runtime 'org.apache.activemq:activemq-core:5.5.1'
         runtime 'org.apache.activemq:activemq-camel:5.5.1'
         runtime 'org.apache.activemq:activemq-pool:5.5.1'
-        runtime('org.apache.camel:camel-jms:2.9.0-RC1') {
+        runtime('org.apache.camel:camel-jms:2.9.0') {
              excludes 'spring-aop', 'spring-beans', 'spring-core', 'spring-expression', 'spring-asm', 'spring-tx', 'spring-context'
         }
     }
 
     plugins {
-        runtime ":routing:1.1.4"
+        runtime ":routing:1.1.5"
     }
 }
