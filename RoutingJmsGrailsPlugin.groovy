@@ -1,10 +1,10 @@
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
 
 class RoutingJmsGrailsPlugin {
-    def version = "1.1.4"
+    def version = "1.1.5-SNAPSHOT"
     def grailsVersion = "2.0.0 > *"
     // the other plugins this plugin depends on
-    def dependsOn = [ routing: '1.1.4' ]
+    def dependsOn = [ routing: '1.1.5' ]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
             "grails-app/views/error.gsp"
