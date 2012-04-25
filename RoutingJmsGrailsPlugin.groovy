@@ -12,6 +12,8 @@ class RoutingJmsGrailsPlugin {
 
 		activemq(org.apache.activemq.camel.component.ActiveMQComponent) {
 			brokerURL = config.brokerURL ?: 'vm://LocalBroker'
+            userName  = config.userName  ?: ''
+            password  = config.password  ?: ''
 		}
 	}
 }
